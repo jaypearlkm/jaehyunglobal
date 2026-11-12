@@ -1,0 +1,20 @@
+[
+  {
+    "label": "VIDEO",
+    "title": "Video Collection",
+    "description": "Add links to interviews, appearances and memorable videos.",
+    "url": "https://www.youtube.com/"
+  },
+  {
+    "label": "PHOTO",
+    "title": "Photo Archive",
+    "description": "Organise official photos and credited photo collections.",
+    "url": "https://www.google.com/"
+  },
+  {
+    "label": "MOMENTS",
+    "title": "Favourite Moments",
+    "description": "A home for special clips and moments worth keeping.",
+    "url": "https://www.youtube.com/"
+  }
+]
