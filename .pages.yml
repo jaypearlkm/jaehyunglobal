@@ -4,58 +4,161 @@ media:
 
 content:
   - name: site
-    label: Website text
+    label: Website text & design
     type: file
     path: site.json
     format: json
     fields:
+      - name: brandName
+        label: Website name
+        type: string
       - name: brandTagline
+        label: Brand tagline
         type: string
       - name: heroEyebrow
+        label: Hero small text
         type: string
       - name: heroTitleTop
+        label: Hero title - first line
         type: string
       - name: heroTitleName
+        label: Hero title - second line
         type: string
       - name: heroCopy
+        label: Hero description
         type: text
       - name: heroPrimaryButton
+        label: Hero main button
+        type: string
+      - name: heroPrimaryUrl
+        label: Hero main button link
         type: string
       - name: heroSecondaryButton
+        label: Hero second button
         type: string
+      - name: heroSecondaryUrl
+        label: Hero second button link
+        type: string
+      - name: heroBackground
+        label: Hero background image
+        type: image
+        options:
+          path: assets
+      - name: heroPolaroidOne
+        label: Hero photo 1
+        type: image
+        options:
+          path: assets
+      - name: heroPolaroidTwo
+        label: Hero photo 2
+        type: image
+        options:
+          path: assets
+      - name: aboutImage
+        label: About image
+        type: image
+        options:
+          path: assets
       - name: aboutTitle
+        label: About title
         type: string
       - name: aboutIntro
+        label: About introduction
         type: text
       - name: aboutHeading
+        label: About heading
         type: string
       - name: aboutText
+        label: About text
         type: text
       - name: aboutDisclaimer
+        label: About disclaimer
         type: text
       - name: playlistTitle
+        label: Playlist title
         type: string
       - name: playlistIntro
+        label: Playlist introduction
         type: text
+      - name: playlistPanelTitle
+        label: Spotify panel heading
+        type: string
+      - name: playlistFeatureTitle
+        label: Spotify feature title
+        type: string
+      - name: playlistFeatureSubtitle
+        label: Spotify feature subtitle
+        type: string
+      - name: playlistCover
+        label: Spotify cover image
+        type: image
+        options:
+          path: assets
+      - name: spotifyPlaylistUrl
+        label: Spotify playlist link
+        type: string
       - name: archiveTitle
+        label: Archive title
         type: string
       - name: archiveIntro
+        label: Archive introduction
         type: text
       - name: projectsTitle
+        label: Projects title
         type: string
       - name: projectsIntro
+        label: Projects introduction
         type: text
       - name: updatesTitle
+        label: Updates title
         type: string
       - name: updatesIntro
+        label: Updates introduction
         type: text
+      - name: updatesPanelTitle
+        label: Latest updates panel heading
+        type: string
+      - name: quickLinksTitle
+        label: Quick links heading
+        type: string
+      - name: quickArchiveLabel
+        label: Quick link - Archive
+        type: string
+      - name: quickProjectsLabel
+        label: Quick link - Projects
+        type: string
+      - name: quickYoutubeLabel
+        label: Quick link - YouTube
+        type: string
+      - name: quickXLabel
+        label: Quick link - X
+        type: string
+      - name: youtubeUrl
+        label: YouTube link
+        type: string
+      - name: xUrl
+        label: X link
+        type: string
+      - name: spotifyUrl
+        label: Spotify link
+        type: string
+      - name: contactEyebrow
+        label: Contact small heading
+        type: string
       - name: contactTitle
+        label: Contact title
         type: string
       - name: contactText
+        label: Contact description
         type: text
+      - name: contactButton
+        label: Contact button text
+        type: string
       - name: contactUrl
+        label: Contact button link
         type: string
       - name: footerNote
+        label: Footer text
         type: string
 
   - name: playlists
@@ -66,30 +169,24 @@ content:
     list: true
     fields:
       - name: category
+        label: Category
         type: string
       - name: label
+        label: Label
         type: string
       - name: title
+        label: Title
         type: string
       - name: description
+        label: Description
         type: text
+      - name: image
+        label: Card image
+        type: image
+        options:
+          path: assets
       - name: url
-        type: string
-
-  - name: projects
-    label: Fan Projects
-    type: file
-    path: projects.json
-    format: json
-    list: true
-    fields:
-      - name: label
-        type: string
-      - name: title
-        type: string
-      - name: description
-        type: text
-      - name: url
+        label: Link
         type: string
 
   - name: archive
@@ -100,12 +197,46 @@ content:
     list: true
     fields:
       - name: label
+        label: Category
         type: string
       - name: title
+        label: Title
         type: string
       - name: description
+        label: Description
         type: text
+      - name: image
+        label: Archive image
+        type: image
+        options:
+          path: assets
       - name: url
+        label: Link
+        type: string
+
+  - name: projects
+    label: Fan Projects
+    type: file
+    path: projects.json
+    format: json
+    list: true
+    fields:
+      - name: label
+        label: Category
+        type: string
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Project image
+        type: image
+        options:
+          path: assets
+      - name: url
+        label: Link
         type: string
 
   - name: updates
@@ -116,10 +247,17 @@ content:
     list: true
     fields:
       - name: date
+        label: Date
         type: string
       - name: month
+        label: Month / Year
         type: string
       - name: title
+        label: Title
         type: string
       - name: description
+        label: Description
         type: text
+      - name: url
+        label: Link
+        type: string
