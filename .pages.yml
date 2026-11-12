@@ -6,7 +6,7 @@ content:
   - name: site
     label: Website text & design
     type: file
-    path: site.json
+    path: data/site.json
     format: json
     fields:
       - name: brandName
@@ -164,7 +164,7 @@ content:
   - name: playlists
     label: Playlists
     type: file
-    path: playlists.json
+    path: data/playlists.json
     format: json
     list: true
     fields:
@@ -192,7 +192,7 @@ content:
   - name: archive
     label: Archive
     type: file
-    path: archive.json
+    path: data/archive.json
     format: json
     list: true
     fields:
@@ -217,7 +217,7 @@ content:
   - name: projects
     label: Fan Projects
     type: file
-    path: projects.json
+    path: data/projects.json
     format: json
     list: true
     fields:
@@ -242,7 +242,7 @@ content:
   - name: updates
     label: Latest Updates
     type: file
-    path: updates.json
+    path: data/updates.json
     format: json
     list: true
     fields:
