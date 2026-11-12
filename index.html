@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172326">
+<meta name="description" content="JAEHYUN GLOBAL — a global fan-made space celebrating Jaehyun through music, memories and projects.">
+<title>JAEHYUN GLOBAL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#172326;--paper:#f3f1eb;--muted:#737a78;--teal:#5aa99d;--mint:#b7d8cb;--yellow:#efc94b;--orange:#e67c42;--red:#c83c45;--blue:#315f87;--violet:#62547e;--line:rgba(23,35,38,.16);--serif:Italiana,Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--script:'Nothing You Could Do',cursive}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}a{color:inherit;text-decoration:none}button,input{font:inherit}.colorline{height:6px;background:linear-gradient(90deg,var(--teal) 0 16%,var(--mint) 16% 29%,#20282a 29% 43%,var(--yellow) 43% 58%,var(--orange) 58% 73%,var(--red) 73% 86%,var(--blue) 86%)}
+header{position:absolute;top:6px;left:0;right:0;z-index:20;color:white;border-bottom:1px solid rgba(255,255,255,.25);background:linear-gradient(180deg,rgba(9,17,19,.52),transparent)}.navwrap{max-width:1500px;margin:auto;padding:21px 4.5%;display:flex;align-items:center;justify-content:space-between;gap:26px}.brand{font:italic 25px var(--script);white-space:nowrap;letter-spacing:-.04em}.nav{display:flex;gap:clamp(14px,3vw,42px);align-items:center}.nav a,.social{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.9)}.nav a:hover{color:var(--yellow)}.socials{display:flex;gap:18px;align-items:center}.social{font-size:16px;letter-spacing:0}.menu{display:none;background:none;border:1px solid #ffffff88;color:white;padding:8px 11px}
+.hero{min-height:610px;position:relative;display:flex;align-items:center;color:white;overflow:hidden;background:#152326 url('assets/jaehyun-album-collage.jpeg') center 42%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,25,26,.75) 0%,rgba(9,25,26,.42) 43%,rgba(9,25,26,.08) 100%),linear-gradient(0deg,rgba(10,20,22,.38),transparent 42%)}.hero:after{content:"";position:absolute;inset:0;opacity:.12;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 4px,#fff 5px,transparent 6px)}.hero-inner{position:relative;z-index:2;width:min(1360px,90%);margin:100px auto 48px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px}.eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--mint)}h1{font:clamp(66px,9vw,132px)/.78 var(--serif);font-weight:400;letter-spacing:-.045em;margin:24px 0 26px;text-transform:uppercase}h1 span{display:block}.hero-copy{font:italic clamp(16px,2vw,22px) var(--serif);max-width:480px;color:#f4f0e8}.explore{display:inline-block;margin-top:26px;border:1px solid rgba(255,255,255,.75);padding:14px 21px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;transition:.2s}.explore:hover{background:white;color:var(--ink)}.hero-art{height:390px;position:relative}.polaroid{position:absolute;width:235px;height:300px;padding:11px 11px 42px;background:#f4f1e9;box-shadow:0 18px 55px #0007}.polaroid:after{content:'JAEHYUN';position:absolute;bottom:14px;left:16px;color:#37434a;font:10px var(--sans);letter-spacing:.16em}.polaroid.one{right:25%;top:3px;transform:rotate(8deg)}.polaroid.two{right:0;bottom:0;transform:rotate(-8deg)}.polaroid img{width:100%;height:100%;object-fit:cover;display:block}.polaroid.one img{object-position:17% 22%}.polaroid.two img{object-position:88% 78%}.signature{position:absolute;right:28%;bottom:5px;font:27px var(--script);color:#fff;transform:rotate(-9deg)}
+.dashboard{width:min(1450px,94%);margin:-1px auto 0;position:relative;z-index:3;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:15px;padding:22px 0}.panel{background:rgba(248,247,242,.88);backdrop-filter:blur(13px);border:1px solid rgba(255,255,255,.75);border-radius:12px;padding:22px;min-height:205px;box-shadow:0 8px 30px #17232612}.panel-title{font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 20px;display:flex;align-items:center;gap:10px}.spark{font-size:19px}.playlist-feature{display:flex;align-items:center;gap:18px}.cover{width:116px;aspect-ratio:1;background:linear-gradient(145deg,var(--teal),var(--mint) 40%,#263b3c 41%,var(--yellow) 70%,var(--orange));display:grid;place-items:center;color:white;text-align:center;font:20px/1.1 var(--serif);box-shadow:0 5px 12px #0002}.feature-title{font-size:14px;letter-spacing:.08em;text-transform:uppercase}.feature-sub{font:italic 15px var(--serif);color:var(--muted);margin:8px 0 13px}.listen{display:inline-block;border-radius:30px;background:#172326;color:#fff;padding:10px 15px;font-size:9px;letter-spacing:.13em;text-transform:uppercase}.updates-mini{display:grid;gap:12px}.mini-update{display:grid;grid-template-columns:72px 1fr;gap:14px;font-size:12px;line-height:1.5}.mini-date{color:#8a9291;letter-spacing:.1em}.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.quick a{border:1px solid #17232616;border-radius:9px;min-height:94px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#fff7;font-size:9px;letter-spacing:.1em;text-transform:uppercase;transition:.2s}.quick a:hover{background:#172326;color:white}.quick b{font-size:25px;font-weight:400}.thankyou{text-align:center;padding:12px 10px 28px;font:italic 20px var(--serif);color:#40515a}.thankyou:before,.thankyou:after{content:'✦';padding:0 24px;color:var(--teal)}
+section.content{padding:76px 0}.content.alt{background:linear-gradient(120deg,#e5efeb,#f6f2e8 48%,#f2e2d4 100%)}.wrap{width:min(1180px,90%);margin:auto}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}.sectionhead h2{font:clamp(36px,5vw,58px)/1 var(--serif);font-weight:400;margin:8px 0 0}.sectionhead p{max-width:420px;color:var(--muted);font-size:12px;line-height:1.8}.smallcap{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}.aboutgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px}.albumstrip{min-height:260px;background:url('assets/jaehyun-album-collage.jpeg') center/cover;position:relative}.albumstrip:after{content:'EVERY ERA · EVERY COLOUR';position:absolute;inset:auto 0 0;padding:18px;color:white;letter-spacing:.18em;font-size:11px;background:linear-gradient(transparent,#10191cbb)}.abouttext{background:#fff9;padding:35px;border:1px solid var(--line)}.abouttext h3{font:32px var(--serif);margin:0 0 14px}.abouttext p{font-size:13px;line-height:1.9;color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.filter{border:1px solid #7f9690;background:transparent;padding:9px 14px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;cursor:pointer}.filter.active,.filter:hover{background:var(--ink);color:white}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 15px 32px #18292a18}.thumb{aspect-ratio:16/9;display:grid;place-items:center;color:white;font:26px var(--serif);background:linear-gradient(130deg,var(--teal),var(--mint),#203538);overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.card:nth-child(3n+2) .thumb{background:linear-gradient(130deg,#252a2c,#355b80,var(--violet))}.card:nth-child(3n) .thumb{background:linear-gradient(130deg,var(--yellow),var(--orange),var(--red))}.cardbody{padding:19px}.tag{font-size:9px;letter-spacing:.18em;color:var(--teal);text-transform:uppercase}.card h3{font:23px var(--serif);margin:9px 0}.card p{font-size:11px;line-height:1.7;color:var(--muted);min-height:38px}.card a{font-size:9px;letter-spacing:.13em;text-transform:uppercase;font-weight:700}.updates-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.update{background:#fff9;border:1px solid var(--line);padding:20px;display:flex;gap:18px}.date{font:25px var(--serif);color:var(--red);min-width:48px}.update h3{font:20px var(--serif);margin:0 0 6px}.update p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}.contact{background:linear-gradient(110deg,#172326,#24434a 50%,#315f87);color:white;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font:42px var(--serif);margin:8px 0}.contact p{font-size:12px;color:#d4e0dc;line-height:1.8}.contact a{border:1px solid #fff9;padding:13px 18px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap}footer{background:#121a1c;color:#e7e8e2;padding:26px 0;border-top:5px solid transparent;border-image:linear-gradient(90deg,var(--teal),var(--mint),var(--yellow),var(--orange),var(--red),var(--blue)) 1}.foot{width:min(1450px,90%);margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:9px;letter-spacing:.15em;text-transform:uppercase}.foot em{font:italic 16px var(--serif);text-transform:none;letter-spacing:0}.search{padding:11px 14px;border:1px solid var(--line);background:#fff;width:260px;max-width:100%}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr .8fr}.dashboard{grid-template-columns:1fr 1fr}.panel:last-child{grid-column:1/-1}.quick a{min-height:80px}}
+@media(max-width:650px){.navwrap{padding:16px 5%}.menu{display:block}.nav{display:none;position:absolute;top:62px;left:0;right:0;padding:18px 5%;background:#172326f5;flex-direction:column;align-items:flex-start}.nav.open{display:flex}.socials{display:none}.hero{min-height:670px;background-position:48% center}.hero-inner{margin-top:105px;grid-template-columns:1fr;gap:5px}.hero-art{height:220px}.polaroid{width:145px;height:185px;padding:7px 7px 29px}.polaroid.one{right:34%;top:0}.polaroid.two{right:8%;bottom:0}.polaroid:after{font-size:7px;bottom:9px}.signature{right:48%;font-size:18px}.dashboard{grid-template-columns:1fr;width:90%;padding:14px 0}.panel:last-child{grid-column:auto}.panel{min-height:auto;padding:18px}.sectionhead{display:block}.sectionhead p{margin-top:10px}.aboutgrid{grid-template-columns:1fr}.albumstrip{min-height:190px}.cards{grid-template-columns:1fr}.updates-grid{grid-template-columns:1fr}.contact{padding:28px;display:block}.contact a{display:inline-block;margin-top:12px}.thankyou{font-size:16px}.thankyou:before,.thankyou:after{padding:0 8px}}
+</style>
+</head>
+<body>
+<div class="colorline"></div>
+<header>
+  <div class="navwrap">
+    <a class="brand" href="#home" data-content="brandName">JAEHYUN GLOBAL</a>
+    <button class="menu" id="menu" type="button">MENU ☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a><a href="#playlist">Playlist</a><a href="#archive">Archive</a><a href="#projects">Projects</a><a href="#updates">Updates</a>
+    </nav>
+    <div class="socials">
+      <a class="social" id="youtubeSocial" href="https://youtube.com" target="_blank" rel="noopener">▶</a>
+      <a class="social" id="spotifySocial" href="https://spotify.com" target="_blank" rel="noopener">◉</a>
+      <a class="social" id="xSocial" href="https://x.com" target="_blank" rel="noopener">𝕏</a>
+      <span>│</span><span class="social">◎ EN</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow" data-content="heroEyebrow">NCT JAEHYUN · EVERY ERA, EVERY COLOUR</div>
+      <h1><span data-content="heroTitleTop">JAEHYUN</span><span data-content="heroTitleName">GLOBAL</span></h1>
+      <p class="hero-copy" data-content="heroCopy">A global space dedicated to Jaehyun.</p>
+      <a class="explore" id="heroPrimary" href="#about" data-content="heroPrimaryButton">Explore more →</a>
+    </div>
+    <div class="hero-art">
+      <div class="polaroid one"><img id="heroPolaroidOne" src="assets/jaehyun-album-collage.jpeg" alt="Jaehyun album collage detail"></div>
+      <div class="polaroid two"><img id="heroPolaroidTwo" src="assets/jaehyun-album-collage.jpeg" alt="Jaehyun album collage detail"></div>
+      <div class="signature">Jaehyun ♡</div>
+    </div>
+  </div>
+</section>
+
+<div class="dashboard">
+  <article class="panel">
+    <h2 class="panel-title"><span class="spark">✦</span><span data-content="playlistPanelTitle">Spotify Playlist</span></h2>
+    <div class="playlist-feature">
+      <img class="cover" id="playlistCover" src="" alt="Playlist cover" style="object-fit:cover">
+      <div>
+        <div class="feature-title" data-content="playlistFeatureTitle">JAEHYUN GLOBAL PLAYLIST</div>
+        <div class="feature-sub" data-content="playlistFeatureSubtitle">for you, always ♡</div>
+        <a class="listen" id="spotifyFeatureLink" href="https://open.spotify.com" target="_blank" rel="noopener">◉ Listen now</a>
+      </div>
+    </div>
+  </article>
+  <article class="panel">
+    <h2 class="panel-title"><span class="spark">✦</span><span data-content="updatesPanelTitle">Latest Updates</span></h2>
+    <div class="updates-mini" id="miniUpdates"><div class="mini-update"><span class="mini-date">COMING SOON</span><span>More updates will be added here.</span></div></div>
+  </article>
+  <article class="panel">
+    <h2 class="panel-title"><span class="spark">✦</span><span data-content="quickLinksTitle">Quick Links</span></h2>
+    <div class="quick">
+      <a href="#archive"><b>▦</b><span data-content="quickArchiveLabel">Archive</span></a>
+      <a href="#projects"><b>▤</b><span data-content="quickProjectsLabel">Projects</span></a>
+      <a id="quickYoutube" href="https://youtube.com" target="_blank" rel="noopener"><b>▶</b><span data-content="quickYoutubeLabel">YouTube</span></a>
+      <a id="quickX" href="https://x.com" target="_blank" rel="noopener"><b>𝕏</b><span data-content="quickXLabel">X</span></a>
+    </div>
+  </article>
+</div>
+<div class="thankyou">Thank you for being here ♡</div>
+
+<section class="content alt" id="about">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div><div class="smallcap">01 / About</div><h2 data-content="aboutTitle">A space for every Jaehyun era.</h2></div>
+      <p data-content="aboutIntro">A global fan-made space celebrating music, memories and moments.</p>
+    </div>
+    <div class="aboutgrid">
+      <div class="albumstrip" id="aboutImage"></div>
+      <div class="abouttext">
+        <h3 data-content="aboutHeading">Every era tells a story.</h3>
+        <p data-content="aboutText">JAEHYUN GLOBAL brings together playlists, archives, fan projects and updates in one place — inspired by the many colours and sounds of Jaehyun's music.</p>
+        <p data-content="aboutDisclaimer">This is an independent fan project and is not affiliated with Jaehyun or his official management. All rights to original media belong to their respective owners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="playlist">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div><div class="smallcap">02 / Listen</div><h2 data-content="playlistTitle">Listen, on repeat.</h2></div>
+      <p data-content="playlistIntro">Playlists, music videos and streaming resources.</p>
+    </div>
+    <div class="filters" data-filter-group="playlist">
+      <button class="filter active" data-filter="all" type="button">All</button>
+      <button class="filter" data-filter="solo" type="button">Solo</button>
+      <button class="filter" data-filter="playlist" type="button">Playlist</button>
+      <button class="filter" data-filter="streaming" type="button">Streaming</button>
+    </div>
+    <div class="cards" id="playlistCards"></div>
+  </div>
+</section>
+
+<section class="content alt" id="archive">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div><div class="smallcap">03 / Memories</div><h2 data-content="archiveTitle">The archive.</h2></div>
+      <p data-content="archiveIntro">A collection of moments, photos and videos.</p>
+    </div>
+    <input class="search" id="archiveSearch" placeholder="Search the archive…" aria-label="Search archive">
+    <div class="cards" id="archiveCards" style="margin-top:20px"></div>
+  </div>
+</section>
+
+<section class="content" id="projects">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div><div class="smallcap">04 / Together</div><h2 data-content="projectsTitle">Made with love.</h2></div>
+      <p data-content="projectsIntro">Fan projects and ways to support together.</p>
+    </div>
+    <div class="cards" id="projectCards"></div>
+  </div>
+</section>
+
+<section class="content alt" id="updates">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div><div class="smallcap">05 / News</div><h2 data-content="updatesTitle">Latest updates.</h2></div>
+      <p data-content="updatesIntro">News, announcements and recent additions.</p>
+    </div>
+    <div class="updates-grid" id="updatesList"></div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <div class="smallcap" style="color:var(--mint)" data-content="contactEyebrow">Stay connected</div>
+        <h2 data-content="contactTitle">Let's stay close.</h2>
+        <p data-content="contactText">Follow our updates and join the community.</p>
+      </div>
+      <a id="contactButton" data-content="contactButton" href="https://x.com" target="_blank" rel="noopener">Visit our X ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span data-content="brandName">JAEHYUN GLOBAL</span>
+    <em data-content="footerNote">For Jaehyun. For NCT. For us.</em>
+    <span>© <span id="year"></span> JAEHYUN GLOBAL · ALL RIGHTS RESERVED</span>
+  </div>
+</footer>
+
+<script>
+/* -------------------------------------------------------
+   JAEHYUN GLOBAL — Pages CMS connection
+   Data files are loaded from /data/*.json
+------------------------------------------------------- */
+
+let playlists = [
+  {category:'solo',label:'SOLO',title:'J - The 1st Album',description:'Explore Jaehyun’s first solo album and its music.',image:'',url:''},
+  {category:'playlist',label:'PLAYLIST',title:'For Jaehyun',description:'A playlist made with love for Jaehyun.',image:'',url:''},
+  {category:'streaming',label:'STREAMING',title:'Streaming Station',description:'Listen, stream and support Jaehyun’s music.',image:'',url:''}
+];
+
+let archive = [
+  {label:'MUSIC',title:'J - The 1st Album',description:'Explore Jaehyun’s first solo album, music videos and behind-the-scenes moments.',image:'',url:''},
+  {label:'PHOTOGRAPHY',title:'Photo Archive',description:'A collection of Jaehyun’s photos, magazine shoots and visual moments.',image:'',url:''},
+  {label:'VIDEO',title:'Video Archive',description:'Performances, interviews, appearances and memorable videos.',image:'',url:''},
+  {label:'NCT',title:'NCT Archive',description:'Jaehyun’s activities and unforgettable moments with NCT.',image:'',url:''}
+];
+
+let projects = [
+  {label:'BIRTHDAY',title:'Jaehyun Birthday Project',description:'Birthday celebrations and special projects made by fans for Jaehyun.',image:'',url:''},
+  {label:'SUPPORT',title:'Fan Support Project',description:'Fan-organized support projects and special events.',image:'',url:''},
+  {label:'STREAMING',title:'Streaming Project',description:'Let’s support Jaehyun’s music together.',image:'',url:''}
+];
+
+let updates = [
+  {date:'2026.11.12',month:'NOVEMBER 2026',title:'Welcome to JAEHYUN GLOBAL',description:'A new global space dedicated to Jaehyun. Explore the latest updates, archives and fan projects.',url:''}
+];
+
+const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({
+  '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+}[char]));
+
+function safeUrl(value) {
+  if (!value) return '#';
+  const text = String(value).trim();
+  if (text.startsWith('#') || text.startsWith('/')) return text;
+  try {
+    const parsed = new URL(text, window.location.origin);
+    return ['http:','https:'].includes(parsed.protocol) ? parsed.href : '#';
+  } catch {
+    return '#';
+  }
+}
+
+function setContent(key, value) {
+  if (value === undefined || value === null || value === '') return;
+  document.querySelectorAll('[data-content="' + key + '"]').forEach(el => {
+    el.textContent = value;
+  });
+}
+
+function setLink(id, value) {
+  const element = document.getElementById(id);
+  if (element && value) element.href = safeUrl(value);
+}
+
+function setImage(id, value) {
+  const element = document.getElementById(id);
+  if (!element || !value) return;
+  if (element.tagName === 'IMG') {
+    element.src = value;
+  } else {
+    element.style.backgroundImage = 'url("' + String(value).replace(/["\\]/g, '') + '")';
+    element.style.backgroundSize = 'cover';
+    element.style.backgroundPosition = 'center';
+  }
+}
+
+function renderCards(id, items) {
+  const root = document.getElementById(id);
+  if (!root) return;
+
+  if (!Array.isArray(items) || items.length === 0) {
+    root.innerHTML = '<p>No items added yet.</p>';
+    return;
+  }
+
+  root.innerHTML = items.map(item => {
+    const title = esc(item.title || 'Jaehyun');
+    const label = esc(item.label || item.category || 'COLLECTION');
+    const description = esc(item.description || '');
+    const image = item.image
+      ? '<div class="thumb"><img src="' + esc(item.image) + '" alt="' + title + '" loading="lazy"></div>'
+      : '<div class="thumb">' + label + '</div>';
+    const link = item.url
+      ? '<a href="' + esc(safeUrl(item.url)) + '" target="_blank" rel="noopener">Explore collection ↗</a>'
+      : '';
+
+    return '<article class="card">' + image +
+      '<div class="cardbody"><div class="tag">' + label + '</div>' +
+      '<h3>' + title + '</h3><p>' + description + '</p>' + link +
+      '</div></article>';
+  }).join('');
+}
+
+function renderUpdates(items) {
+  const root = document.getElementById('updatesList');
+  const mini = document.getElementById('miniUpdates');
+  if (!root) return;
+
+  if (!Array.isArray(items) || items.length === 0) {
+    root.innerHTML = '<p>No updates yet.</p>';
+    if (mini) mini.innerHTML = '<div class="mini-update"><span class="mini-date">SOON</span><span>More updates will be added here.</span></div>';
+    return;
+  }
+
+  root.innerHTML = items.map(item => {
+    const date = esc(item.date || '');
+    const month = esc(item.month || '');
+    const title = esc(item.title || '');
+    const description = esc(item.description || '');
+    const link = item.url
+      ? '<a href="' + esc(safeUrl(item.url)) + '" target="_blank" rel="noopener">Read more ↗</a>'
+      : '';
+    return '<article class="update"><div class="date">' + date +
+      '<small style="display:block;font:700 8px var(--sans);letter-spacing:.12em">' + month +
+      '</small></div><div><h3>' + title + '</h3><p>' + description + '</p>' + link +
+      '</div></article>';
+  }).join('');
+
+  if (mini) {
+    mini.innerHTML = items.slice(0, 4).map(item =>
+      '<div class="mini-update"><span class="mini-date">' +
+      esc(item.date || item.month || '') + '</span><span>' +
+      esc(item.title || '') + '</span></div>'
+    ).join('');
+  }
+}
+
+function renderAll() {
+  renderCards('playlistCards', playlists);
+  renderCards('archiveCards', archive);
+  renderCards('projectCards', projects);
+  renderUpdates(updates);
+}
+
+async function getJSON(name) {
+  try {
+    const response = await fetch('/data/' + name + '.json?refresh=' + Date.now(), {
+      cache: 'no-store'
+    });
+
+    if (!response.ok) {
+      console.error('Could not load /data/' + name + '.json:', response.status);
+      return null;
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error loading ' + name + '.json:', error);
+    return null;
+  }
+}
+
+async function loadCMS() {
+  const results = await Promise.all([
+    getJSON('site'),
+    getJSON('playlists'),
+    getJSON('archive'),
+    getJSON('projects'),
+    getJSON('updates')
+  ]);
+
+  const [site, playlistData, archiveData, projectData, updateData] = results;
+
+  if (site && typeof site === 'object' && !Array.isArray(site)) {
+    Object.keys(site).forEach(key => setContent(key, site[key]));
+
+    setLink('heroPrimary', site.heroPrimaryUrl);
+    setLink('spotifyFeatureLink', site.spotifyPlaylistUrl);
+    setLink('quickYoutube', site.youtubeUrl);
+    setLink('quickX', site.xUrl);
+    setLink('youtubeSocial', site.youtubeUrl);
+    setLink('spotifySocial', site.spotifyUrl || site.spotifyPlaylistUrl);
+    setLink('xSocial', site.xUrl);
+    setLink('contactButton', site.contactUrl);
+
+    setImage('heroPolaroidOne', site.heroPolaroidOne);
+    setImage('heroPolaroidTwo', site.heroPolaroidTwo);
+    setImage('aboutImage', site.aboutImage);
+    setImage('playlistCover', site.playlistCover);
+
+    if (site.heroBackground) {
+      const hero = document.querySelector('.hero');
+      hero.style.backgroundImage =
+        'linear-gradient(90deg,rgba(9,25,26,.75),rgba(9,25,26,.08)),url("' +
+        String(site.heroBackground).replace(/["\\]/g, '') + '")';
+      hero.style.backgroundSize = 'cover';
+      hero.style.backgroundPosition = 'center 42%';
+    }
+  }
+
+  if (Array.isArray(playlistData)) playlists = playlistData;
+  if (Array.isArray(archiveData)) archive = archiveData;
+  if (Array.isArray(projectData)) projects = projectData;
+  if (Array.isArray(updateData)) updates = updateData;
+
+  renderAll();
+  applyPlaylistFilter();
+}
+
+let currentPlaylistFilter = 'all';
+
+function applyPlaylistFilter() {
+  const filtered = currentPlaylistFilter === 'all'
+    ? playlists
+    : playlists.filter(item =>
+        String(item.category || item.label || '').toLowerCase() === currentPlaylistFilter
+      );
+  renderCards('playlistCards', filtered);
+}
+
+document.querySelectorAll('[data-filter-group="playlist"] button').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('[data-filter-group="playlist"] button').forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    currentPlaylistFilter = button.dataset.filter;
+    applyPlaylistFilter();
+  });
+});
+
+document.getElementById('archiveSearch').addEventListener('input', event => {
+  const query = event.target.value.toLowerCase();
+  const filtered = archive.filter(item =>
+    (String(item.title || '') + ' ' + String(item.description || '') + ' ' + String(item.label || ''))
+      .toLowerCase().includes(query)
+  );
+  renderCards('archiveCards', filtered);
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const menu = document.getElementById('menu');
+const nav = document.getElementById('nav');
+menu.addEventListener('click', () => nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => nav.classList.remove('open'));
+});
+
+renderAll();
+loadCMS();
+</script>
+</body>
+</html>
