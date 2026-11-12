@@ -1,0 +1,26 @@
+[
+  {
+    "category": "SOLO",
+    "label": "JAEHYUN SOLO",
+    "title": "J",
+    "description": "Explore Jaehyun's first solo album and its music.",
+    "image": "",
+    "url": ""
+  },
+  {
+    "category": "PLAYLIST",
+    "label": "FAN PLAYLIST",
+    "title": "For Jaehyun",
+    "description": "A playlist made with love for Jaehyun.",
+    "image": "",
+    "url": ""
+  },
+  {
+    "category": "STREAMING",
+    "label": "STREAMING",
+    "title": "Streaming Station",
+    "description": "Listen, stream and support Jaehyun's music.",
+    "image": "",
+    "url": ""
+  }
+]
