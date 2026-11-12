@@ -1,0 +1,125 @@
+media:
+  input: assets
+  output: /assets
+
+content:
+  - name: site
+    label: Website text
+    type: file
+    path: site.json
+    format: json
+    fields:
+      - name: brandTagline
+        type: string
+      - name: heroEyebrow
+        type: string
+      - name: heroTitleTop
+        type: string
+      - name: heroTitleName
+        type: string
+      - name: heroCopy
+        type: text
+      - name: heroPrimaryButton
+        type: string
+      - name: heroSecondaryButton
+        type: string
+      - name: aboutTitle
+        type: string
+      - name: aboutIntro
+        type: text
+      - name: aboutHeading
+        type: string
+      - name: aboutText
+        type: text
+      - name: aboutDisclaimer
+        type: text
+      - name: playlistTitle
+        type: string
+      - name: playlistIntro
+        type: text
+      - name: archiveTitle
+        type: string
+      - name: archiveIntro
+        type: text
+      - name: projectsTitle
+        type: string
+      - name: projectsIntro
+        type: text
+      - name: updatesTitle
+        type: string
+      - name: updatesIntro
+        type: text
+      - name: contactTitle
+        type: string
+      - name: contactText
+        type: text
+      - name: contactUrl
+        type: string
+      - name: footerNote
+        type: string
+
+  - name: playlists
+    label: Playlists
+    type: file
+    path: playlists.json
+    format: json
+    list: true
+    fields:
+      - name: category
+        type: string
+      - name: label
+        type: string
+      - name: title
+        type: string
+      - name: description
+        type: text
+      - name: url
+        type: string
+
+  - name: projects
+    label: Fan Projects
+    type: file
+    path: projects.json
+    format: json
+    list: true
+    fields:
+      - name: label
+        type: string
+      - name: title
+        type: string
+      - name: description
+        type: text
+      - name: url
+        type: string
+
+  - name: archive
+    label: Archive
+    type: file
+    path: archive.json
+    format: json
+    list: true
+    fields:
+      - name: label
+        type: string
+      - name: title
+        type: string
+      - name: description
+        type: text
+      - name: url
+        type: string
+
+  - name: updates
+    label: Latest Updates
+    type: file
+    path: updates.json
+    format: json
+    list: true
+    fields:
+      - name: date
+        type: string
+      - name: month
+        type: string
+      - name: title
+        type: string
+      - name: description
+        type: text
