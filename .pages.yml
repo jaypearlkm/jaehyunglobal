@@ -214,10 +214,10 @@ content:
         label: Link
         type: string
 
-  - name: projects
-    label: Fan Projects
+  - name: streaming
+    label: Streaming Guide
     type: file
-    path: data/projects.json
+    path: data/streaming.json
     format: json
     list: true
     fields:
