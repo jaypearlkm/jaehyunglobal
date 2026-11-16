@@ -188,6 +188,9 @@ content:
       - name: url
         label: Link
         type: string
+      - name: guide
+        label: Streaming Guide
+        type: text
 
   - name: archive
     label: Archive
