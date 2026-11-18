@@ -2,29 +2,22 @@
   {
     "label": "MUSIC",
     "title": "J - The 1st Album",
-    "description": "Explore Jaehyun's first solo album, music videos and behind-the-scenes moments.",
-    "image": "",
-    "url": ""
+    "description": "Explore Jaehyun's first solo album, music videos and behind-the-scenes moments."
   },
   {
     "label": "PHOTOGRAPHY",
     "title": "Photo Archive",
-    "description": "A collection of Jaehyun's photos, magazine shoots and visual moments.",
-    "image": "",
-    "url": ""
+    "description": "A collection of Jaehyun's photos, magazine shoots and visual moments."
   },
   {
     "label": "VIDEO",
     "title": "Video Archive",
     "description": "Performances, interviews, appearances and memorable videos.",
-    "image": "",
-    "url": ""
+    "url": "https://jaehyunglobal.dev/video-archive"
   },
   {
     "label": "NCT",
     "title": "NCT Archive",
-    "description": "Jaehyun's activities and unforgettable moments with NCT.",
-    "image": "",
-    "url": ""
+    "description": "Jaehyun's activities and unforgettable moments with NCT."
   }
 ]
